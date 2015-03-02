@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.ucl.oracc.view.RootLayoutController">
+   <top>
+      <AnchorPane prefHeight="29.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="13.0" prefWidth="800.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="newAtfFile" mnemonicParsing="false" text="New" />
+                        <MenuItem fx:id="openAtfFile" mnemonicParsing="false" text="Open" />
+                        <MenuItem fx:id="saveAtfFile" mnemonicParsing="false" text="Save" />
+                        <MenuItem fx:id="quitNammu" mnemonicParsing="false" text="Quit" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem fx:id="copyText" mnemonicParsing="false" text="Copy" />
+                        <MenuItem fx:id="cutText" mnemonicParsing="false" text="Cut" />
+                        <MenuItem fx:id="pasteText" mnemonicParsing="false" text="Paste" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="ATF">
+                     <items>
+                        <MenuItem fx:id="validateAtf" mnemonicParsing="false" text="Validate ATF" />
+                        <MenuItem fx:id="lemmatizeAtf" mnemonicParsing="false" text="Lemmatize ATF" />
+                        <MenuItem fx:id="consoleView" mnemonicParsing="false" text="View/Hide Console" />
+                        <MenuItem fx:id="modelView" mnemonicParsing="false" text="View Model" />
+                        <MenuItem fx:id="unicodeMode" mnemonicParsing="false" text="Unicode Keyboard Mode" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem fx:id="nammuHelp" mnemonicParsing="false" text="Help" />
+                        <MenuItem fx:id="nammuAbout" mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.ucl.oracc.view.AtfEditorController">
+	<children>
+		<SplitPane dividerPositions="0.6130653266331658" layoutX="160.0" layoutY="108.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<items>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+					<children>
+						<BorderPane layoutX="57.0" prefHeight="240.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<top>
+								<ToolBar prefHeight="40.0" prefWidth="200.0">
+									<items>
+										<HBox spacing="3.0">
+											<children>
+												<Button fx:id="newAtfFile" mnemonicParsing="false" text="New" />
+												<Button fx:id="openAtfFile" mnemonicParsing="false" text="Open" />
+												<Button fx:id="saveAtfFile" mnemonicParsing="false" text="Save" />
+											</children>
+										</HBox>
+										<Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="5.0" />
+										<HBox spacing="3.0">
+											<children>
+												<Button fx:id="copyText" mnemonicParsing="false" text="Copy" />
+												<Button fx:id="cutText" mnemonicParsing="false" text="Cut" />
+												<Button fx:id="pasteText" mnemonicParsing="false" text="Paste" />
+											</children>
+										</HBox>
+										<Separator orientation="VERTICAL" prefHeight="28.0" prefWidth="0.0" />
+										<HBox spacing="3.0">
+											<children>
+												<Button fx:id="validateAtf" mnemonicParsing="false" text="Validate" />
+												<Button fx:id="lemmatizeAtf" mnemonicParsing="false" text="Lemmatize" />
+											</children>
+										</HBox>
+										<Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="0.0" />
+										<HBox spacing="3.0">
+											<children>
+												<Button fx:id="consoleView" mnemonicParsing="false" text="Console" />
+												<Button fx:id="modelView" mnemonicParsing="false" text="Model" />
+												<Button fx:id="unicodeMode" mnemonicParsing="false" text="Unicode" />
+											</children>
+										</HBox>
+										<Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="0.0" />
+										<HBox prefHeight="28.0" prefWidth="85.0">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="nammuHelp" mnemonicParsing="false" text="Help" AnchorPane.rightAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+										</HBox>
+									</items>
+								</ToolBar>
+							</top>
+							<center>
+								<TextFlow prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+							</center>
+						</BorderPane>
+					</children>
+				</AnchorPane>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+					<children>
+						<TitledPane animated="false" prefHeight="65.0" prefWidth="598.0" text="Console" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<content>
+								<ScrollPane prefHeight="200.0" prefWidth="200.0" />
+							</content>
+						</TitledPane>
+					</children>
+				</AnchorPane>
+			</items>
+		</SplitPane>
+	</children>
+</AnchorPane>
